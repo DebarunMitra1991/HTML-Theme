@@ -10,7 +10,7 @@ html,body{
     --text-gray: #3f4954;
     --text-light:#686666da;
     --bg-color:#0f0f0f;
-    --white:#fffff;
+    --white:#ffffff;
     --midnight:#104f55;
 
     /* Gradient color */
@@ -49,8 +49,9 @@ ul{
     background: white;
     padding: 0.2rem;
     height:0rem;
-    min-height: 40vh;
+    min-height: 10vh;
     overflow: hidden; 
+    transition: height 0.5s ease-in-out;
 }
 .nav .nav-brand a{
     font-size: 1.6rem;
@@ -62,6 +63,29 @@ ul{
 
 .nav .nav-menu{ 
     justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top:0%;
+    width:90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.collapse{
+    height: 30rem ;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color:var(--text-gray);
 }
 
 .nav .nav-items{
@@ -79,20 +103,33 @@ ul{
 
 .nav .nav-items .nav-link:hover{
     background-color: var(--midnight);
-    color: var(--white);
 }
 
 .nav .nav-items .nav-link:hover a{
-    /* background-color: var(--midnight); */
     color: var(--white);
 }
 
 .nav .social{
     padding: 1.4rem 1rem;
-    margin: 1rem;
+    margin: 0.5 rem;
 }
 
 .nav .social a{
-    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.nav .social i:hover{
+    color:#a1c4cf;
 }
 /* End navbar */
+
+/*Start Viweport less than or eual to 750px */
+@media only screen and (max-width:750px){
+     .nav .nav-menu,.nav .nav-items{
+        flex-direction: column;
+     }
+     .nav .toggle-collapse{
+         display: initial;
+     }
+}
+/*Start Viweport less than or eual to 750px */
