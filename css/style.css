@@ -65,6 +65,14 @@ button.btn{
     cursor: pointer;
 }
 
+span{
+    font-family: var(--Able);
+}
+
+.container{
+    margin: 0 7vw;
+}
+
 /* font-family: 'Abel', sans-serif; */
 
 /* End Global classes */
@@ -186,6 +194,8 @@ button.btn{
         background-position: right;
         height: 100vh;
         width: 100%;
+        margin-top: 0%;
+        background-size: 65%;
     }
 
     main .blog .blog-post{
@@ -196,7 +206,7 @@ button.btn{
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 80%;
+        width: 70%;
         margin: 3rem 2rem;
         box-shadow: 0 15px 20px rgba(0,0,0,0.2);
     }
@@ -210,11 +220,38 @@ button.btn{
         background: var(--sky);
         margin:0.5rem;
     } 
+
+    main .blog-content span{
+        display: flex;
+        flex-direction: column;
+    }
     
+    section .container .owl-nav{
+        position: absolute;
+        top: 0%;
+        margin: 0 auto;
+        width:100%  
+    }
+
+    .owl-nav .owl-prev .owl-nav-prev,
+    .owl-nav .owl-next .owl-nav-next{
+        color:var(--text-gray);
+        background: transparent;
+        font-size: 2rem ;
+    }
+
+    .owl-theme .owl-nav [class*='owl-']:hover{
+        background:transparent;
+        color:var(--midnight);
+    }
+    
+    .owl-theme .owl-nav [class*='owl-']{
+        outline: none;
+    }
      
     /* End Blog Carousel */
     
-/* End Main Content */
+/* End Main Content */ 
 
 /*Start Viweport less than or eual to 750px */
 @media only screen and (max-width:750px){
