@@ -233,19 +233,23 @@ span{
         width:100%  
     }
 
-    .owl-nav .owl-prev .owl-nav-prev,
-    .owl-nav .owl-next .owl-nav-next{
-        color:var(--text-gray);
-        background: transparent;
-        font-size: 2rem ;
+    .owl-navigation{
+         background: none !important;
     }
 
-    .owl-theme .owl-nav [class*='owl-']:hover{
-        background:transparent;
-        color:var(--midnight);
+    .owl-navigation .owl-nav-prev,
+    .owl-navigation .owl-nav-next{
+        color:var(--text-gray) !important;
+        background: none !important;
+        font-size: 2rem !important;
+    }
+
+    .owl-theme .owl-navigation [class*='owl-']:hover{
+        background:none !important;
+        color:var(--midnight) !important;
     }
     
-    .owl-theme .owl-nav [class*='owl-']{
+    .owl-theme .owl-navigation [class*='owl-']{
         outline: none;
     }
      
