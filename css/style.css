@@ -65,6 +65,8 @@ button.btn{
     cursor: pointer;
 }
 
+
+
 span{
     font-family: var(--Able);
 }
@@ -188,7 +190,7 @@ p{
         margin:1.8rem;
         background: var(--sky); 
     }
-    main .site-title.btn:hover{
+    main .site-title .btn:hover{
         background: transparent;
         border:1px solid var(--white);
         color:var(--white);
