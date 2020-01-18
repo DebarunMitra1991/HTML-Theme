@@ -274,7 +274,7 @@ p{
 
     main.post-content{
         width: 100%;
-        margin-bottom: 5rem;
+        /* margin-bottom: 5rem; */
     } 
 
     main .site-content .post-content > .post-image, .post-title{
@@ -317,6 +317,24 @@ p{
         border-radius: 0;
         padding: 0.7rem 1.5rem;
         background: var(--sky);
+    }
+
+    .site-content .pagination{
+        justify-content: center;
+        color:var(--text-gray);
+        margin: 4rem 0;
+    } 
+
+    .site-content .pagination a{
+        padding: .6rem .9rem;
+        border-radius: 2rem;
+        margin: 0.3rem;
+        font-family: var(--Lexend);
+    }
+
+    .site-content .pagination .page{
+        background-color: var(--text-gray);
+        color:var(--white);
     }
     /* End side content */
 
